@@ -24,7 +24,7 @@ const ProductCard = ({ imagem, name, price, priceDiscount }) => {
       gap: '8px',
     },
     price: {
-      color: '#333333',
+      color: '#1F1F1F',
       fontSize: '24px',
       fontWeight: 'bold',
     },
@@ -48,8 +48,8 @@ const ProductCard = ({ imagem, name, price, priceDiscount }) => {
       <div style={styles.priceGroup}>
         {hasDiscount ? (
           <>
-            <span style={styles.priceOld}>{price}</span>
-            <span style={styles.priceDiscount}>{priceDiscount}</span>
+            <span style={styles.priceOld}>R${price}</span>
+            <span style={styles.priceDiscount}>R${priceDiscount}</span>
           </>
         ) : (
           <span style={styles.price}>{price}</span>

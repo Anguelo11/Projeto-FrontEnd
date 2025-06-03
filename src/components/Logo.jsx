@@ -2,9 +2,9 @@
 
 const Logo = () => {
   return (
-       <div className="w-20rem h-2">
+       <div className="w-2 h-2">
             <img 
-            src="src/assets/assets/logo-header.svg" 
+            src="/src/assets/assets/logo-header.svg" 
             alt="imagem-logo" 
             width="253px"
             height="44px"/>
