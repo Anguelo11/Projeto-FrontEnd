@@ -91,7 +91,7 @@ const HomePage = () => {
           <Section
             title="Mais Vendidos"
             titleAlign="left"
-            link={{ text: "Ver tudo", href: "/produtos" }}>
+            link={{ text: "Ver tudo", href: "/Projeto-FrontEnd/produtos" }}>
             
             <div className="w-full flex justify-content-center">
               <Gallery
