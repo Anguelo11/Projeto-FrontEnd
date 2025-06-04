@@ -12,7 +12,7 @@ const App = () => {
   return(
     <div className='flex flex-column justify-content-between min-h-screen'
     style={{background: "#F5F5F5"}}>
-      <BrowserRouter basename='/Projeto-FrontEnd'>
+      <BrowserRouter /*basename='/Projeto-FrontEnd'*/>
         <Paths/>
       </BrowserRouter>
     </div>
