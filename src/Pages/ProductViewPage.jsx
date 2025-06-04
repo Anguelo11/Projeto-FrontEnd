@@ -6,36 +6,44 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
 
+import productItem1 from '../assets/assets/produc-image-2.jpeg';
+import productItem2 from '../assets/assets/produc-image-3.jpeg';
+import productItem3 from '../assets/assets/produc-image-4.jpeg';
+
+import redShoes from '../assets/assets/product-thumb-2.jpeg'
+import BrownShoes from '../assets/assets/product-thumb-3.jpeg'
+import whiteShoes from '../assets/assets/product-thumb-4.jpeg'
+import greenShoes from '../assets/assets/product-thumb-5.jpeg'
 
 const ProductViewPage = () => {
   const images = [
-    {src: "/produc-image-2.jpeg", alt: "Produto 1"},
-    {src: "/produc-image-3.jpeg", alt: "Produto 2"},
-    {src: "/produc-image-4.jpeg", alt: "Produto 3"}
+    {src: `${productItem1}`, alt: "Produto 1"},
+    {src: `${productItem2}`, alt: "Produto 2"},
+    {src: `${productItem3}`, alt: "Produto 3"}
   ]
 
   const products = [
     {
       name: "Sapato Vermelho",
-      imagem: "/public/product-thumb-2.jpeg",
+      imagem: `${redShoes}`,
       price: "500",
       priceDiscount: "450"
     },
     {
       name: "Sapato Bege",
-      imagem: "/public/product-thumb-3.jpeg",
+      imagem: `${BrownShoes}`,
       price: "470",
       priceDiscount: "399.99"
     },
     {
       name: "Tênis branco com detalhes em azul e marrom",
-      imagem: "/public/product-thumb-4.jpeg",
+      imagem: `${whiteShoes}`,
       price: "399.90",
       priceDiscount: "375.90"
     },
     {
       name: "Tênis verde",
-      imagem: "/public/product-thumb-5.jpeg",
+      imagem: `${greenShoes}`,
       price: "600",
       priceDiscount: "550"
     },

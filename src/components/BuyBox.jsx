@@ -1,4 +1,4 @@
-
+import starIcon from '../assets/assets/star-icon.svg';
 
 const BuyBox = (
 {  name,
@@ -32,7 +32,7 @@ const BuyBox = (
             fontSize: "14px",
             marginRight: "0.5rem",
           }}>
-            <img src="/src/assets/assets/star-icon.svg" alt="estrela" className="w-3 h-3 mr-1" />{stars}
+            <img src={starIcon} alt="estrela" className="w-3 h-3 mr-1" />{stars}
         </div>
         <span style={{fontSize: "14px",color: "#8F8F8F"}}>{rating} avaliações</span>
       </div>

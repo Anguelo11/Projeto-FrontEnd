@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import left from '../assets/assets/arrow-left.svg';
+import right from '../assets/assets/arrow-right.svg';
 const Gallery = ({ images = [], width = "100%", height = "auto", radius = "0px", showThumbs }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,7 +31,7 @@ const Gallery = ({ images = [], width = "100%", height = "auto", radius = "0px",
 
 
       <img
-        src="/src/assets/assets/arrow-left.svg"
+        src={left}
         alt="Anterior"
         onClick={prev}
         style={{
@@ -45,7 +46,7 @@ const Gallery = ({ images = [], width = "100%", height = "auto", radius = "0px",
 
 
       <img
-        src="/src/assets/assets/arrow-right.svg"
+        src={right}
         alt="Próximo"
         onClick={next}
         style={{

@@ -2,6 +2,10 @@ import Logo from "./Logo"
 import Informacoes from "./Informacoes"
 import { NavLink } from "react-router-dom"
 
+import facebook from '../assets/assets/facebook.svg';
+import instagram from '../assets/assets/instagram.svg';
+import X from '../assets/assets/twitter.svg';
+
 const Footer = () => {
   return (
     <footer
@@ -23,19 +27,20 @@ const Footer = () => {
             <NavLink 
             to="https://www.facebook.com/digitalcollegealdeota"
             >
-              <img className="w-1rem" src="/src/assets/assets/facebook.svg" alt="facebook" />
+              <img className="w-1rem" src={facebook} alt="facebook" />
             </NavLink>
 
             <NavLink 
             to="https://www.instagram.com/digitalcollegebr/"
             >
-              <img className="w-2rem" src="/src/assets/assets/instagram.svg" alt="facebook" />
+              <img className="w-2rem" src={instagram}
+              alt="instagram" />
             </NavLink>
 
             <NavLink 
             to="https://x.com/eaicollegers"
             >
-              <img className="w-2rem mt-1" src="/src/assets/assets/twitter.svg" alt="facebook" />
+              <img className="w-2rem mt-1" src={X} alt="X" />
             </NavLink>
 
 

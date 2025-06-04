@@ -3,6 +3,8 @@ import Logo from "./Logo";
 import SearchField from "./SearchField";
 import { Button } from "primereact/button";
 
+import cart from '../assets/assets/mini-cart.svg'
+
 const Header = () => {
   return (
     <div className="w-full shadow-5 p-4" style={{ background: "#FFFFFF" }}>
@@ -15,12 +17,12 @@ const Header = () => {
           <Logo />
         </div>
 
-        {/* Barra de pesquisa */}
+
         <div className="flex-grow-1 flex justify-content-center">
           <SearchField />
         </div>
 
-        {/* Botões de login/cadastro */}
+
         <div className="flex align-items-center gap-6">
           <Link
             style={{ color: "#474747", fontSize: "16px" }}
@@ -45,17 +47,17 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Carrinho */}
+
         <div className="flex align-items-center">
           <img
             className="p-2"
-            src="/src/assets/assets/mini-cart.svg"
+            src={cart}
             alt="carrinho de compras"
           />
         </div>
       </div>
 
-      {/* Linha de navegação abaixo */}
+
       <div className="flex gap-4 mt-3 flex-wrap">
         <NavLink
           to="/"
