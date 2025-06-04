@@ -11,7 +11,7 @@
             const search = window.location.search;
 
             if(!search.includes('redirect=')){
-                const redirectUrl = base + '/index.html?redirect=' + path;
+                const redirectUrl = base + '/?redirect=' + path;
                 window.location.replace(redirectUrl);
             }
         })();
