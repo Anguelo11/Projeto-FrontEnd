@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecionando...</title>
+    <script>
+        (function (){
+            const base = '/Projeto-FrontEnd';
+            const path = window.location.pathname;
+            const search = window.location.search;
+
+            if(!search.includes('redirect=')){
+                const redirectUrl = base + '/index.html?redirect=' + path;
+                window.location.replace(redirectUrl);
+            }
+        })();
+    </script>
+  </head>
+  <body>
+    <h5>Redirecionando...</h5>
+  </body>
+</html>
